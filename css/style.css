@@ -158,6 +158,7 @@ p {
     background: #333 url('../img/showcase.jpg') no-repeat center center/cover;
     height: 100vh;
     color: #fff;
+    position: relative;
 }
 
 #showcase .showcase-content {
@@ -168,12 +169,12 @@ p {
     text-align: center;
     height: 100%;
     padding: 0 2rem;
-    /* overlay */
-    /* position: absolute;
-    top:60px;
+    /* overlay  */
+    position: absolute;
+    top:0;
     left:0;
     bottom: 0;
-    right: 0; */
+    right: 0;
     background-color: rgba(0, 0, 0, .4)
 }
 
