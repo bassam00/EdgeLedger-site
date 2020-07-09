@@ -1,145 +1,252 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-
-*{
-    box-sizing:border-box;
-    margin:0;
-    padding:0
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
 }
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.4;
-    height: 3000px;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-p{
+p {
     margin: 0.75rem 0
 }
 
+
 /* Utility Classes */
-.container{
-    margin:auto;
+
+.container {
+    margin: auto;
     max-width: 1100px;
-    padding:0 2rem;
+    padding: 0 2rem;
     overflow: hidden;
 }
-.text-center{
+
+.list {
+    margin: 0.5rem 0;
+    list-style: none
+}
+
+.list li {
+    padding: 0.5rem 0;
+    border-bottom: #444 dotted 1px;
+}
+
+.text-center {
     text-align: center;
 }
-.text-primary{
-    color:#93cb52;
+
+.text-primary {
+    color: #93cb52;
 }
 
-.l-heading{
-    font-size:4rem;
+.bg-light {
+    background: #f4f4f4;
+    color: #333;
+}
+
+.bg-dark {
+    background: #333;
+    color: #fff
+}
+
+.bg-primary{
+    background-color: #93cb52;
+    color:#fff
+}
+
+.l-heading {
+    font-size: 4rem;
     margin-bottom: 0.75rem;
     line-height: 1.1;
 }
-.m-heading{
-    font-size:2rem;
+
+.m-heading {
+    font-size: 2rem;
     margin-bottom: 0.75rem;
     line-height: 1.1;
 }
 
-.lead{
+.lead {
     font-size: 1.3rem;
     margin-bottom: 2rem;
 }
 
-.py-1{padding:1.5rem 0;}
-.py-2{padding:2rem 0;}
-.py-3{padding:3rem 0;}
+.py-1 {
+    padding: 1.5rem 0;
+}
 
-.btn{
+.py-2 {
+    padding: 2rem 0;
+}
+
+.py-3 {
+    padding: 3rem 0;
+}
+
+.p-1 {
+    padding: 1.5rem;
+}
+
+.p-2 {
+    padding: 2rem;
+}
+
+.p-3 {
+    padding: 3rem;
+}
+
+.btn {
     display: inline-block;
-    color:#fff;
+    color: #fff;
     background: #93cb52;
-    padding:0.5rem 2rem;
-    border:none;
+    padding: 0.5rem 2rem;
+    border: none;
     border-radius: 5px;
 }
 
-.btn:hover{
+.btn:hover {
     background: #7ab436;
 }
 
-.btn-dark{
+.btn-dark {
     background-color: #333;
-    color:#fff
+    color: #fff
 }
+
 
 /* Navbar */
-#navbar{
+
+#navbar {
     background: #333;
     position: sticky;
-    top:0;
-    color:#fff;
+    top: 0;
+    color: #fff;
     display: flex;
     justify-content: space-between;
-    z-index:1;
-    padding:1rem;
+    z-index: 1;
+    padding: 1rem;
 }
 
-#navbar ul{
+#navbar ul {
     display: flex;
     list-style: none;
     align-items: center;
-
 }
 
-#navbar ul li a{
-    padding:0.75rem;
-    color:#fff;
+#navbar ul li a {
+    padding: 0.75rem;
+    color: #fff;
     margin: 0 0.25rem;
 }
-#navbar ul li a:hover{
+
+#navbar ul li a:hover {
     background: #93cb52;
     border-radius: 5px;
 }
 
+
 /* Showcase */
+
 #showcase {
     background: #333 url('../img/showcase.jpg') no-repeat center center/cover;
-    height:100vh;
-    color:#fff;
+    height: 100vh;
+    color: #fff;
 }
 
-#showcase .showcase-content{
-    display:flex;
+#showcase .showcase-content {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height:100%;
-    padding:0 2rem;
+    height: 100%;
+    padding: 0 2rem;
     /* overlay */
     /* position: absolute;
     top:60px;
     left:0;
     bottom: 0;
     right: 0; */
-    background-color:rgba(0,0,0,.4)
+    background-color: rgba(0, 0, 0, .4)
 }
+
 
 /* What We Do Section */
-.items{
+
+.items {
     display: flex;
-    padding:1rem;
+    padding: 1rem;
 }
 
-.item{
-    flex:1;
+.item {
+    flex: 1;
     text-align: center;
-    padding:1rem
+    padding: 1rem
 }
 
-.item i{
+.item i {
     background-color: #93cb52;
     border-radius: 50%;
-    padding:1rem;
+    padding: 1rem;
     margin-bottom: 1rem;
+}
+
+
+/* Who Are We */
+
+#who {
+    display: flex;
+}
+
+#who div {
+    flex: 1;
+}
+
+#who .who-img {
+    background: url('../img/people.jpg') no-repeat center center/cover;
+}
+
+
+/* Clients */
+
+#clients .items {
+    display: flex;
+}
+
+#clients .items img {
+    display: block;
+    margin: auto;
+    width: 60%
+}
+
+/* Section: Form  */
+#contact{
+    display: flex;
+
+}
+
+#contact .map, #contact .contact-form{
+    flex:1;
+}
+
+#contact .contact-form .form-group{
+    margin: 0.75rem;
+}
+#contact .form-group label{
+    display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea
+{
+    width:100%;
+    padding:.5rem;
+    resize: none;
 }
